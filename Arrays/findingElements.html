@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>FindingElements</title>
+</head>
+
+<body>
+    <script>
+        //Methods of finding an element in the array
+        const marks = [33, 66, 43, 34, 77, 55, 99, 56, 66, 89, 87, 67]
+
+        //to find index of element
+        console.log(marks.indexOf(99))
+
+        //if  a number is repeated, find the last occurrence of number in array
+        console.log(marks.lastIndexOf(66))
+
+        //to check if a number is in array
+        console.log(marks.includes(43)) //it will return true as it is present in array
+        console.log(marks.includes(12)) //it will return false as number is not in array
+
+        /*Find method is used to return the value of first element in the array 
+        that satisfies the provided testing function
+        otherwise UNDEFINED is returned*/
+        let found = marks.find(function(element) {
+            return element > 66
+        })
+        console.log(found)
+
+        //Find method is also used to find a property in array of objects
+        let students = [{
+            regNo: "CS1",
+            name: "a"
+        }, {
+            regNo: "CS2",
+            name: "b"
+        }, {
+            regNo: "CS3",
+            name: "c"
+        }, {
+            regNo: "CS4",
+            name: "d"
+        }, {
+            regNo: "CS5",
+            name: "e"
+        }, {
+            regNo: "CS6",
+            name: "f"
+        }, {
+            regNo: "CS7",
+            name: "d"
+        }]
+
+        let temp = students.find(function(elements) {
+            return elements.regNo === 'CS5'
+        })
+        console.log(temp)
+
+        //to find index of an object in array
+        let index = students.findIndex(function(object) {
+            return object.name === "f"
+        })
+
+        console.log(index)
+    </script>
+</body>
+
+</html>
