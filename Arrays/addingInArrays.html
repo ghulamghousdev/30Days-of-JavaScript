@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //let's take a array named as collection
+        let collection = [22, 32, 11, 423]
+
+        //to add elements at the end of array
+        collection.push(12, 23, 12)
+        console.log(collection)
+
+        //to add at start
+        collection.unshift(333, 11)
+        console.log(collection)
+
+        //we can also add different data types in one array
+        collection.push("Friend")
+        collection.unshift(22.12)
+        console.log(collection)
+
+        //can also add at any index
+        collection[4] = "Lorem"
+        console.log(collection)
+
+        //Array can also be used to store objects
+        const students = [{
+            id: '11',
+            first_name: 'Dall',
+            last_name: 'Puckring',
+        }, {
+            id: '12',
+            first_name: 'Margarete',
+            last_name: 'Brandi',
+        }, {
+            id: '13',
+            first_name: 'Bendicty',
+            last_name: 'Woodage',
+        }, {
+            id: '14',
+            first_name: 'Micki',
+            last_name: 'Mattes',
+        }, {
+            id: '15',
+            first_name: 'Flory',
+            last_name: 'Gladeche',
+        }, {
+            id: '16',
+            first_name: 'Jamill',
+            last_name: 'Emilien',
+        }, {
+            id: '17',
+            first_name: 'Brett',
+            last_name: 'Aizikowitz',
+        }, {
+            id: '18',
+            first_name: 'Lorry',
+            last_name: 'Smallman',
+        }, {
+            id: '19',
+            first_name: 'Gilly',
+            last_name: 'Flott',
+        }, ];
+
+        console.log(students)
+    </script>
+</body>
+
+</html>
