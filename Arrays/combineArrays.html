@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>combining array</title>
+</head>
+
+<body>
+    <script>
+        //Combining an array
+        let numbers = [32, 12, 44, 453, 23, 43, 2112, 4252, 23124, 452]
+        let numbers1 = [4, 2344, 14, 235346, 7, 6, 2, 3, 3423, 412412, 423523, 5, 235252]
+        let newArray = numbers.concat(numbers1)
+        console.log(newArray)
+
+        //slice method 
+        //if we want to get all the elements after the index pass just one parameter
+        let arr = numbers.slice(4)
+        console.log(arr)
+
+        //bt if you want to give range then pass two elements, it will only return the elements which are in that index range
+        let newArr = numbers.slice(2, 7)
+        console.log(newArr)
+
+        //can also combine two arrays using spread operator
+        let copy = [...numbers, ...numbers1]
+        console.log(copy)
+
+        //can also add new elements while combining two arrays at the end
+        let num = [...numbers, 'GG', ...numbers1, 'Not Gate']
+        console.log(num)
+    </script>
+</body>
+
+</html>
