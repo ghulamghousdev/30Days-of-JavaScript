@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arrow Functions</title>
+</head>
+
+<body>
+    <script>
+        //Arrow functions
+        //Let's have an array
+        let students = [{
+            regNo: "CS1",
+            name: "a"
+        }, {
+            regNo: "CS2",
+            name: "b"
+        }, {
+            regNo: "CS3",
+            name: "c"
+        }, {
+            regNo: "CS4",
+            name: "d"
+        }, {
+            regNo: "CS5",
+            name: "e"
+        }, {
+            regNo: "CS6",
+            name: "f"
+        }, {
+            regNo: "CS7",
+            name: "d"
+        }]
+
+        //in arrow function, keyword function is removed and return keyword is also removed
+        let found = students.find(elements =>
+            elements.regNo === 'CS5')
+        console.log(found)
+
+        //similarly for index
+        let index = students.findIndex(elements => elements.name === 'c')
+        console.log(index);
+    </script>
+</body>
+
+</html>
