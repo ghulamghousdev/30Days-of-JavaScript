@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing elements of an array</title>
+</head>
+<script>
+    //testing elements of an array
+    //every() method is used to check if al the elements satisfies the given condition
+    let numbers = [23423, 234445, 55, 65645, 76, 87, 66, 44, 2155, 643]
+    let allPositive = numbers.every(a => a >= 0)
+    console.log(allPositive)
+        //similarly to check if all the numbers are negative
+        //for array named as numbers will return false
+    let allNegative = numbers.every(a => a < 0)
+    console.log(allNegative)
+
+    //some() method is used to check at least one element satisfies the proprty
+    let atleastOnePositive = numbers.some(a => a >= 0)
+    console.log(atleastOnePositive)
+</script>
+
+<body>
+
+</body>
+
+</html>
